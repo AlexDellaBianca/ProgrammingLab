@@ -1,0 +1,5096 @@
+ 1/1: print ("hello world")
+ 1/2: print ("hello world!")
+ 1/3: print ("hello world!")
+ 1/4: print ("hello world!")
+ 1/5: print ("helloworld!")
+ 1/6: print ("hello world!")
+ 1/7: print ("helloworld!")
+ 1/8: print ("hellow orld!")
+ 1/9: 2 + 2
+1/10:
+2 + 2
+ciao
+1/11:
+2 + 2
+"ciao"
+1/12:
+2 + 2
+print("ciao")
+1/13:
+x =2 + 2
+print("ciao")
+1/14:
+print(2+2)
+print("hello world")
+1/15: %timeit [n*n for n in range(200)]
+1/16:
+def greet(name="carlo"):
+    """ questa funzione dà il nome della persona passata in argomento """
+    print(name)
+
+help(greet)
+1/17:
+def greet(name):
+    """ questa funzione dà il nome della persona passata in argomento """
+    print(name)
+
+help(greet)
+1/18:
+lista = []
+lista2 = [2,3]
+stringa =""
+
+lista[:], lista2[1:4], stringa[1:2]
+1/19:
+jobs_data = [
+    {'job_title': 'Data Scientist',  'job_skills': ['Python', 'Machine Learning'], 'remote': True},
+    {'job_title': 'Data Analyst',  'job_skills': ['Excel', 'SQL'], 'remote': False},
+    {'job_title': 'Machine Learning Engineer', 'job_skills': ['Python', 'TensorFlow', 'Keras'], 'remote': True},
+    {'job_title': 'Software Developer', 'job_skills': ['Java', 'C++'], 'remote': True},
+    {'job_title': 'Data Scientist', 'job_skills': ['R', 'Statistics'], 'remote': False}
+]
+1/20: list(filter(lambda job: job["remote"], jobs_data))
+1/21:
+%%writefile my_module.py
+
+def somma(x,y):
+    return x+y
+1/22:
+import  my_module
+
+print(somma(4,4))
+1/23:
+import my_module
+
+print(somma(4,4))
+1/24:
+%%writefile -a my_module.py
+
+def somma_new(x,y):
+    return x+y
+
+import my_module
+1/25:
+%%writefile my_module.py
+
+def somma(x,y):
+    return x+y
+
+import my_module
+1/26:
+
+
+print(somma(4,4))
+1/27:
+
+
+print(somma_new(4,4))
+1/28:
+from my_module import somma
+
+print(somma_new(4,4))
+1/29:
+%%writefile my_module.py
+
+def somma(x,y):
+    return x+y
+
+import my_module
+
+print(my_module.somma(3,2))
+1/30:
+%%writefile my_module.py
+
+def somma(x,y):
+    return x+y
+
+import my_module
+
+print(my_module.somma(3,2))
+1/31:
+%%writefile my_module.py
+
+def somma(x,y):
+    return x+y
+
+import my_module
+
+print(my_module.somma(3,2))
+1/32:
+%%writefile my_module.py
+
+def somma(x,y):
+    return x+y
+
+import my_module
+
+print(my_module.somma(3,2))
+1/33:
+import my_module
+
+print(my_module.somma(3,2))
+1/34: import numpy as np
+1/35:
+import numpy as np
+
+np.mean([2,3,4])
+ 2/1: np.array([1, 2.2 ,3]).dtype
+ 2/2:
+import numpy as np
+
+np.mean([2,3,4])
+ 2/3: np.array([1, 2.2 ,3]).dtype
+ 2/4:
+np.array([1, 2.2 ,3]).dtype #questo è di tipo float
+
+np.array([1,2,"a"]).dtype
+ 2/5: np.arange(0.4,0.8,0.1)
+ 2/6:
+
+np.linspace(0.5,0.7,3)
+ 2/7: np.zeros(3)
+ 2/8:
+np.zeros(3)
+
+a = np.arrange(1,10,2)
+ 2/9:
+np.zeros(3)
+
+a = np.arange(1,10,2)
+2/10:
+np.zeros(3)
+
+a = np.arange(1,10,2)
+a
+2/11:
+np.zeros(3)
+
+a = np.arange(1,10,2)
+a
+
+np.zeros(a)
+2/12:
+np.zeros(3)
+
+a = np.arange(1,10,2)
+a
+
+a = np.zeros(a)
+2/13:
+np.zeros(3)
+
+a = np.arange(1,10,2)
+a
+
+a = np.zeros(a)
+a
+2/14: a = np.arange(1,10,2)
+2/15:
+a = np.arange(1,10,2)
+
+a *2
+2/16:
+a = np.arange(1,10,2)
+
+a *2
+
+a+1
+2/17:
+a = np.arange(1,10,2)
+a
+a *2
+
+a+1
+2/18:
+a = np.arange(1,10,2)
+a
+a *2
+
+a+1
+2/19:
+a = np.arange(1,10,2)
+a
+a *2
+
+a+1
+2/20:
+a = np.arange(1,10,2)
+a
+a *2
+
+a+1
+2/21:
+a = np.arange(1,10,2)
+a
+a *2
+
+a+1
+2/22:
+a = np.arange(1,10,2)
+a
+a *2
+
+a+1
+2/23:
+a = np.arange(1,10,2)
+a
+b= a *2
+
+a+1
+2/24:
+a = np.arange(1,10,2)
+a
+b= a *2
+b
+a+1
+2/25:
+a = np.arange(1,10,2)
+a
+b = a * 2
+
+a+1
+2/26:
+a = np.arange(1,10,2)
+a
+b = a * 2
+b
+a+1
+2/27:
+a = np.arange(1,10,2)
+a
+b = a * 2
+b
+a+1
+2/28:
+a = np.arange(1,10,2)
+a
+b = a * 2
+b
+a+1
+2/29:
+a = np.arange(1,10,2)
+a
+b = a * 2
+print(b)
+2/30:
+a = np.arange(1,10,2)
+a
+b = a * 2
+print(b)
+2/31:
+a = np.arange(1,10,2)
+a
+b = a * 2
+print(b)
+2/32:
+a = np.arange(1,10,2)
+a
+b = a * 2
+print(b)
+2/33:
+a = np.arange(1,10,2)
+a
+print(a)
+b = a * 2
+print(b)
+2/34:
+a = np.arange(1,10,2)
+a
+print(a)
+b = a * 2
+print(b)
+2/35:
+a = np.arange(1,10,2)
+a
+print(a)
+b = a * 2
+print(b)
+2/36:
+a = np.arange(1,10,2)
+a
+print(a)
+b = a * 2
+print(b)
+2/37:
+a = np.arange(1,10,2)
+a
+print(a)
+b = a * 2
+print(b)
+2/38: a=([1,3,7])
+2/39:
+a=([1,3,7])
+
+print(len(a))
+2/40:
+a=([1,3,7])
+
+print(len(a))
+a.size
+2/41:
+a=([1,3,7])
+
+print(len(a))
+size.a
+2/42:
+a=np.array([1,3,7])
+
+print(len(a))
+size.a
+2/43:
+a=np.array([1,3,7])
+
+print(len(a))
+size.a
+2/44:
+a=np.array([1,3,7])
+
+print(len(a))
+2/45:
+a=np.array([1,3,7])
+
+print(len(a))
+ 3/1: import numpy as np
+ 3/2: import numpy as np
+ 3/3:
+import numpy as np
+
+def is_primo(i):
+    primo = True
+
+    while(primo = True)
+
+
+
+
+a=np.array([i for i in range(10) if is_primo(i)])
+
+print(len(a))
+ 3/4:
+import numpy as np
+
+def is_primo(i):
+    primo = True
+
+    for x in range(2, x-1):
+        if i%2 == 0:
+            return False
+    return True
+
+
+a=np.array([i for i in range(10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+ 3/5:
+import numpy as np
+
+def is_primo(i):
+    primo = True
+
+    for x in range(2, x-1):
+        if i%2 == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+ 3/6:
+import numpy as np
+
+def is_primo(i):
+    primo = True
+
+    for x in range(2, x-1):
+        if i%2 == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(2,10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+ 3/7:
+import numpy as np
+
+def is_primo(i):
+    primo = True
+
+    for x in range(2, x-1):
+        if i%2 == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(2,10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+ 3/8: a = np.arange(1,20)
+ 3/9:
+a = np.arange(1,20)
+b = a[2:4]
+3/10:
+a = np.arange(1,20)
+b = a[2:4]
+b
+3/11:
+a = np.arange(1,20)
+b = a[2:4]
+print(b)
+3/12:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+a,b,c
+3/13:
+import numpy as np
+
+def is_primo(i):
+
+    for x in range(2, i-1):
+        if x%2 == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(2,10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+3/14:
+import numpy as np
+
+def is_primo(i):
+
+    for x in range(2, i-1):
+        if x%2 == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(2,10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+
+a
+3/15:
+import numpy as np
+
+def is_primo(i):
+
+    for x in range(2, i-1):
+        if i%x == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(2,10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+
+a
+ 4/1:
+import numpy as np
+a = np.array([1,2,3,4,5,6,7,6,5,4,3,2,1])
+
+a>5, a[a>5], np.any(a>5), np.all(a>5)
+ 5/1: import numpy as np
+ 5/2:
+import numpy as np
+
+a = np.array([2,3,5,7,11,13,17,19])
+ 5/3:
+import numpy as np
+
+a = np.array([2,3,5,7,11,13,17,19])
+
+print(a[a>10])
+ 5/4:
+import numpy as np
+
+a = np.array([2,3,5,7,11,13,17,19])
+
+print(a[a>10])
+
+print(a[a%2 == 0])
+ 5/5: a = np.arange((1:6),(1:6))
+ 5/6: a,b = np.arange(1:6)
+ 5/7: a , b = np.arange(1:6)
+ 5/8: a = np.arange(1:6)
+ 5/9: a , b = np.arange(1,6)
+5/10: a= np.arange((1,6),(1,6))
+5/11: a = np.arange((1,6),(1,6))
+5/12: a = np.arange((1,6))
+5/13: a = np.arange((1,6))
+5/14: a = np.arange(1,6)
+5/15: a = np.array([np.arange(1,6)],[np.arange(1,6)])
+5/16: a = np.array(np.arange(1,6),np.arange(1,6))
+5/17: a = np.array([np.arange(1,6),np.arange(1,6)])
+5/18:
+a = np.array([np.arange(1,6),np.arange(1,6)])
+print(a)
+5/19:
+a = np.arange(20).reshape((4,5))
+
+b = a[1:3]
+5/20:
+a = np.arange(20).reshape((4,5))
+
+b = a[1:3]
+5/21:
+a = np.arange(20).reshape((4,5))
+
+b = a[1:3]
+
+b
+5/22:
+a = np.arange(20).reshape((4,5))
+print(a)
+b = a[1:3]
+
+b
+5/23:
+a = np.arange(20).reshape((4,5))
+print("a", a)
+b = a[1:3]
+
+b
+5/24:
+a = np.arange(20).reshape((4,5))
+print("a", a)
+b = a[1,3]
+
+b
+5/25:
+a = np.arange(20).reshape((4,5))
+print("a", a)
+b = a[[1,3]]
+
+b
+5/26:
+a = np.arange(20).reshape((4,5))
+print("a", a)
+b = a[[1,3]]
+print("b", b)
+b
+5/27:
+a = np.arange(20).reshape((4,5))
+print("a", a)
+
+b = a[[1,3]]
+print("b", b)
+
+
+c = a[[3,]]
+5/28:
+a = np.arange(20).reshape((4,5))
+print("a", a)
+
+b = a[[1,3]]
+print("b", b)
+
+
+c = a[[3,]]
+print("c",c)
+5/29:
+a = np.arange(20).reshape((4,5))
+print("a", a)
+
+b = a[[1,3]]
+print("b", b)
+
+
+c = a[[3,]]
+print("c",c)
+
+a/c
+5/30:
+a = np.arange(20).reshape((4,5))
+print("a", a)
+
+b = a[[1,3]]
+print("b", b)
+
+
+c = a[[3,]]
+print("c",c)
+
+print(a/c)
+5/31:
+a = np.arange(20).reshape((4,5))
+print("a", a)
+
+b = a[[1,3]]
+print("b", b)
+
+
+c = a[[3,]]
+print("c",c)
+
+print("a/c", a/c)
+ 4/2:
+%%timeit
+# Approccio non vettorizzato con un ciclo for
+c = []  # Iniziamo con un array vuoto che popoleremo nel ciclo
+for i in range(len(a)):
+    c.append(a[i] + b[i])
+5/32: matrix = np.arange(np.randint(0,1,3)).reshape(10,3)
+5/33: matrix = np.arange(np.random.randint(0,1,3)).reshape(10,3)
+5/34: matrix = np.arange(np.random.randint(0,1,3)).reshape((10,3))
+5/35: matrix = np.random.rand(10,3)
+5/36:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+5/37:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+a[np.isclose[a, 0,5]]
+5/38:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix[np.isclose[matrix, 0,5, rtol = 1e-1]]
+5/39:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix[np.isclose[matrix, 0,5, rtol=1e-1]]
+5/40:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix[np.isclose[matrix, 0,5]]
+5/41:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix[np.isclose[matrix, 0,5]]
+5/42:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix[np.isclose[matrix, 0,5]]
+5/43:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix[np.isclose[matrix, 0,5]]
+5/44:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix[np.isclose[matrix, 0,5]]
+5/45:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+np.isclose(matrix, 0.5, rtol=1e-1)
+5/46:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix-0,5
+5/47:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix-0,5
+print(matrix)
+5/48:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix = matrix-0,5
+print("ris = ", matrix)
+5/49:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix = matrix-0.5
+print("ris = ", matrix)
+5/50:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix = matrix-0.5
+print("ris = ", matrix)
+print(np.min(matrix,axis=1)) #diventa 10 * 1
+5/51:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix = matrix-0.5
+print("ris = ", matrix)
+
+print("minimo =" np.min(matrix,axis=1)) #diventa 10 * 1
+5/52:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix = matrix-0.5
+print("ris = ", matrix)
+
+print("minimo =" ,np.min(matrix,axis=1)) #diventa 10 * 1
+5/53:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix = np.abs(matrix-0.5)
+print("ris = ", matrix)
+
+print("minimo =" ,np.min(matrix,axis=1)) #diventa 10 * 1
+
+matrix[ : ,np.min(matrix,axis=1)]
+5/54:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+matrix = np.abs(matrix-0.5)
+print("ris = ", matrix)
+
+print("minimo =" ,np.min(matrix,axis=1)) #diventa 10 * 1
+
+matrix[ : ,np.argmin(matrix,axis=1)]
+5/55:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+b = np.abs(matrix-0.5)
+print("ris = ", b)
+
+print("minimo =" ,np.min(b,axis=1)) #diventa 10 * 1
+
+matrix[ : ,np.argmin(b,axis=1)]
+5/56:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+b = np.abs(matrix-0.5)
+print("ris = ", b)
+
+print("minimo =" ,np.min(b,axis=1)) #diventa 10 * 1
+
+matrix[ np.arange(matrix.shape[0],np.argmin(b,axis=1))]
+5/57:
+matrix = np.random.rand(10,3)
+print("matrix =" , matrix)
+
+b = np.abs(matrix-0.5)
+print("ris = ", b)
+
+print("minimo =" ,np.min(b,axis=1)) #diventa 10 * 1
+
+matrix[np.arange(matrix.shape[0]),np.argmin(b,axis=1)]
+ 7/1:
+a = np.arange(1,20)
+
+print(a)
+
+b = a[2:4]
+
+c = a[::-1]
+ 7/2:
+import numpy as np
+
+def is_primo(i):
+
+    for x in range(2, i-1):
+        if i%x == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(2,10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+
+a
+ 7/3:
+a = np.arange(1,20)
+
+print(a)
+
+b = a[2:4]
+
+c = a[::-1]
+ 7/4:
+a = np.arange(1,20)
+
+print(a)
+
+print(b = a[2:4])
+
+c = a[::-1]
+ 7/5:
+a = np.arange(1,20)
+
+print(a)
+
+b = a[2:4]
+
+b
+
+c = a[::-1]
+ 7/6:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print("I 3 Array iniziali: \n"a,b,c)
+ 7/7:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print("I 3 Array iniziali: \n",a,b,c)
+ 7/8:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {} \n {} \n {}",a,b,c)
+ 7/9:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c}")
+7/10:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c}")
+
+print(a/c)
+7/11:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c}")
+
+print("A diviso C = \n"a/c)
+7/12:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c}")
+
+print("A diviso C = \n", a/c)
+7/13:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c} \n")
+
+print("A diviso C = \n", a/c)
+7/14:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c} \n")
+
+print("A diviso C = \n", a/c)
+
+al =[1,2,3,4]
+alb = al.reverse
+
+print(alb)
+7/15:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c} \n")
+
+print("A diviso C = \n", a/c)
+
+al =[1,2,3,4]
+alb = reversed(al)
+
+print(alb)
+7/16:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c} \n")
+
+print("A diviso C = \n", a/c)
+
+al =[1,2,3,4]
+alb = al[::-1]
+
+print(alb)
+7/17:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c} \n")
+
+print("A diviso C = \n", a/c)
+
+al =[1,2,3,4]
+alb = al[::-1]
+
+print(alb)
+
+print(al/alb)
+7/18:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c} \n")
+
+print("A diviso C = \n", a/c)
+
+al =[1,2,3,4]
+alb = al[::-1]
+
+print(alb)
+
+for i,j in al,alb:
+    
+    print(i/j)
+7/19:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c} \n")
+
+print("A diviso C = \n", a/c)
+
+al =[1,2,3,4]
+alb = al[::-1]
+
+print(alb)
+
+for i,j in zip(al,alb):
+    print(i/j)
+7/20:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c} \n")
+
+print("A diviso C = \n", a/c)
+
+al =[1,2,3,4]
+alb = al[::-1]
+
+print("\n alb= "alb)
+
+for i,j in zip(al,alb):
+    print("\n al/alb =" i/j)
+7/21:
+a = np.arange(1,20)
+b = a[2:4]
+c = a[::-1]
+
+print(f"I 3 Array iniziali: \n {a} \n {b} \n {c} \n")
+
+print("A diviso C = \n", a/c)
+
+al =[1,2,3,4]
+alb = al[::-1]
+
+print("\n alb= ",alb)
+
+for i,j in zip(al,alb):
+    print("\n al/alb =", i/j)
+ 8/1:
+import numpy as np
+a = np.array([1,2,3,4,5,6,7,6,5,4,3,2,1])
+
+a>5, a[a>5], np.any(a>5), np.all(a>5)
+ 8/2:
+import random 
+import numpy as np
+
+salary_array = np.array([random.randint(100000, 150000) for num in range(10)])
+
+average_salary = np.mean(salary_array)
+average_salary
+ 8/3:
+median_salary = np.median(salary_array)
+median_salary
+ 8/4:
+salary_variance = np.var(salary_array, ddof=1)  # ddof=1 per la varianza campionaria
+salary_variance
+ 8/5:
+# Standard deviation of 'salary_year_avg' column
+salary_std_dev = np.std(salary_array, ddof=1)  # ddof=1 per la deviazione standard campionaria
+salary_std_dev
+ 8/6:
+# Minimum of 'salary_year_avg' column
+min_salary = np.min(salary_array)
+min_salary
+ 8/7:
+# Maximum of 'salary_year_avg' column
+max_salary = np.max(salary_array)
+max_salary
+ 8/8: np.argmax(np.array([1,2,3,3,1]))
+ 8/9:
+salary_with_none = np.array([123124, None, 145000, 128000, 110000, 149999,  None, 135000, 115000, 140000])
+salary_with_none * 10
+11/1: print("hello world")
+11/2: print("hello world")
+11/3:
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+v
+11/4: v = [68,65,77,110,160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+11/5:
+v = [68,65,77,110,160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+v
+11/6:
+v = [68,65,77,110,160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+print(v)
+11/7:
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+11/8:
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+11/9:
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+
+v_n
+11/10:
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+
+print(v_n[2]+v_n[3])
+11/11:
+#1.
+
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+
+#2.
+
+print(np.min(v_n))
+11/12:
+#1.
+
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+
+#2.
+
+print(np.min(v_n))
+
+#3.
+
+print(np.max(v_n))
+11/13:
+#1.
+
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+
+#2.
+
+print(np.min(v_n))
+
+#3.
+
+print(np.max(v_n))
+
+#4. (completare)
+
+v_tf = np.array(v_n>120)
+
+print(v_tf)
+11/14: v = np.array(50.000, 105.250, 55.000, 89.000)
+11/15: v = np.array([50.000, 105.250, 55.000, 89.000])
+11/16:
+v = np.array([50.000, 105.250, 55.000, 89.000])
+
+print(v)
+11/17:
+v = np.array([50.000, 105.250, 55.000, 89.000])
+
+print(v.dtype)
+11/18:
+v = np.array([50.000, 105.250, 55.000, 89.000], dtype=float)
+
+print(v.dtype)
+11/19:
+v = np.array([50.000, 105.250, 55.000, 89.000], dtype=float)
+
+print(v.dtype)
+11/20:
+v = np.array([50.000, 105.250, 55.000, 89.000], dtype=float)
+
+print(v)
+11/21:
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype)
+11/22:
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v)
+11/23:
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v[1])
+11/24:
+#1
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v[1])
+
+#2
+
+np.where(v == np.max(v),v + ((v/100)*15))
+
+print(v)
+11/25:
+#1
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v[1])
+
+#2
+
+np.where(v == (np.max(v)),v + ((v/100)*15))
+
+print(v)
+11/26:
+#1
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v[1])
+
+#2
+
+np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+11/27:
+#1
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v[1])
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+11/28:
+#1
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v[1])
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+#3
+
+#è presente.
+print("infatti", v.dtype)
+
+#4
+11/29:
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v[1])
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+#4
+11/30:
+#1.
+
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+
+print(v_n)
+print(v_n.dtype)
+
+#2.
+
+print(np.min(v_n))
+#3.
+
+print(np.max(v_n))
+
+#4. (completare)
+
+#a)
+
+v_tf = np.array(v_n>120)
+
+print(v_tf)
+
+#b)
+11/31:
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v[1])
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+#nella versione nuova di numpy, sono float in automatico
+
+#4
+11/32:
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype)
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+#nella versione nuova di numpy, sono float in automatico
+
+#4
+11/33:
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v.dtype)
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+#nella versione nuova di numpy, sono float in automatico
+
+#4
+11/34:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 e 6
+
+v = np.where(v == "50000" & ~105250, v + ((v/100)*15))
+11/35:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 e 6
+
+v = np.where(v == 50000 & ~105250, v + ((v/100)*15))
+11/36:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 e 6
+
+v = np.where(v == 50000 & ~105250, v + ((v/100)*20), v + ((v/100)*10))
+
+print(v)
+11/37:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 e 6
+
+v = np.where(v == 50000 & ~105250, v + ((v/100)*20), v + ((v/100)*10))
+
+print(v)
+11/38:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 e 6
+
+v = np.where(v == 50000 & ~121037.5 , v + ((v/100)*20), v + ((v/100)*10))
+
+print(v)
+11/39:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 e 6
+
+v = np.where(v == 50000 & v < 121038 , v + ((v/100)*20), v + ((v/100)*10))
+
+print(v)
+11/40:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 e 6
+
+v = np.where(v == 50000 and v < 121038 , v + ((v/100)*20), v + ((v/100)*10))
+
+print(v)
+11/41:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 e 6
+
+v = np.where(v == 50000, v + ((v/100)*20))
+
+print(v)
+11/42:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 e 6
+
+v = np.where(v == 50000, v + ((v/100)*20),v)
+
+print(v)
+11/43:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 
+
+v = np.where(v == 50000, v + ((v/100)*20),v)
+
+print(v)
+
+#6 
+
+v = np.where(55000 < v < 100000, v + ((v/100)*10),v)
+11/44:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 
+
+v = np.where(v == 50000, v + ((v/100)*20),v)
+
+print(v)
+
+#6 
+
+v = np.where(v == 60000, v + ((v/100)*10),v)
+v = np.where(v == 89000, v + ((v/100)*10), v)
+
+print(v)
+11/45:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 
+
+v = np.where(v == 50000, v + ((v/100)*20),v)
+
+print(v)
+
+#6 
+
+v = np.where(v == 60000, v + ((v/100)*10),v)
+v = np.where(v == 89000, v + ((v/100)*10), v)
+
+print(v)
+
+#7
+
+print(sum(v))
+11/46:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 
+
+v = np.where(v == 50000, v + ((v/100)*20),v)
+
+print(v)
+
+#6 
+
+v = np.where(v == 60000, v + ((v/100)*10),v)
+v = np.where(v == 89000, v + ((v/100)*10), v)
+
+print(v)
+
+#7
+
+print("\n Costo totale =",sum(v))
+11/47:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+v1 = np.copy(v)
+
+print(v.dtype) #è un int
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 
+
+v = np.where(v == 50000, v + ((v/100)*20),v)
+
+print(v)
+
+#6 
+
+v = np.where(v == 60000, v + ((v/100)*10),v)
+v = np.where(v == 89000, v + ((v/100)*10), v)
+
+print(v)
+
+#7
+
+print("\n Costo totale =",sum(v))
+11/48:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+v1 = np.copy(v)
+
+print(v.dtype) #è un int
+print(v1)
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 
+
+v = np.where(v == 50000, v + ((v/100)*20),v)
+
+print(v)
+
+#6 
+
+v = np.where(v == 60000, v + ((v/100)*10),v)
+v = np.where(v == 89000, v + ((v/100)*10), v)
+
+print(v)
+
+#7
+
+print("\n Costo totale =",sum(v))
+11/49:
+#ho notato il comportamento particolare della tipizzazione nei punti
+# 1 e 2, ho lasciato delle note.
+
+#1
+
+v = np.array([50000, 105250, 55000, 89000])
+v1 = np.copy(v) #serve per il punto 7
+
+print(v.dtype) #è un int
+
+print(v1)
+
+#2
+
+v = np.where(v == (np.max(v)),v + ((v/100)*15), v)
+
+print(v)
+
+print(v.dtype) #qui diventa float l'intero vettore
+
+#3
+
+#è presente.
+print("infatti è un float:", v.dtype)
+
+
+#4
+
+#fatto
+
+#5 
+
+v = np.where(v == 50000, v + ((v/100)*20),v)
+
+print(v)
+
+#6 
+
+v = np.where(v == 60000, v + ((v/100)*10),v)
+v = np.where(v == 89000, v + ((v/100)*10), v)
+
+print(v)
+
+#7
+
+print("\n Costo totale =",sum(v))
+
+print("\n costo causato dal aumento del ceo =")
+print((np.sum(v)-np.sum(v1)))
+17/1:
+a = [[1,2,3], [4,5,6]]
+a[0][-1]
+17/2:
+a = [[1,2,3], [4,5,6]]
+a[0][-1]
+15/1:
+#1.
+
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+
+print(v_n)
+print(v_n.dtype)
+
+#2.
+
+print(np.min(v_n))
+#3.
+
+print(np.max(v_n))
+
+#4. (completare)
+
+#a)
+
+v_tf = np.array(v_n>120)
+
+print(v_tf)
+
+#b)
+
+print(np.sum(v_n > 120))
+15/2:
+#1.
+
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+
+print(v_n)
+print(v_n.dtype)
+
+#2.
+
+print(np.min(v_n))
+#3.
+
+print(np.max(v_n))
+
+#4. (completare)
+
+#a)
+
+v_tf = np.array(v_n>120)
+
+print(v_tf)
+
+#b)
+
+print(np.mean(v_tf)*100)
+15/3:
+#1.
+
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+
+print(v_n)
+print(v_n.dtype)
+
+#2.
+
+print(np.min(v_n))
+#3.
+
+print(np.max(v_n))
+
+#4. (completare)
+
+#a)
+
+v_tf = np.array(v_n>120)
+
+print(v_tf)
+
+#b)
+
+print(np.mean(v_tf)*100)
+print(np.mean(v_n < 120))
+15/4:
+#1.
+
+v = [68, 65, 77, 110, 160, 161, 162, 161, 160, 161, 162, 163, 164, 163, 162, 100, 90, 97, 72, 60, 70]
+
+import numpy as np
+
+v_n = np.array(v)
+
+print(v_n)
+print(v_n.dtype)
+
+#2.
+
+print(np.min(v_n))
+#3.
+
+print(np.max(v_n))
+
+#4. (completare)
+
+#a)
+
+v_tf = np.array(v_n>120)
+
+print(v_tf)
+
+#b)
+
+print(np.mean(v_tf)*100)
+print(np.mean(v_n < 120)*100)
+17/3:
+# Generazione di 200 valori casuali di emissioni di CO2 in tonnellate per anno 
+# Supponiamo emissioni tra 4 e 20 tonnellate per persona 
+co2_emissions = np.round(np.random.uniform(4, 20, 200), 2)
+
+# Nome del file di output
+output_file = "C:\Users\ronal\Desktop\PYTHON\ProgrammingLab\__pycache__emissioni.txt"
+
+# Salvataggio su file
+np.savetxt(output_file, co2_emissions, fmt="%.2f")
+
+# Restituisco il percorso del file
+output_file
+17/4:
+# Generazione di 200 valori casuali di emissioni di CO2 in tonnellate per anno 
+# Supponiamo emissioni tra 4 e 20 tonnellate per persona 
+co2_emissions = np.round(np.random.uniform(4, 20, 200), 2)
+
+# Nome del file di output
+output_file = "PYTHON\ProgrammingLab\__pycache__emissioni.txt"
+
+# Salvataggio su file
+np.savetxt(output_file, co2_emissions, fmt="%.2f")
+
+# Restituisco il percorso del file
+output_file
+17/5:
+# Generazione di 200 valori casuali di emissioni di CO2 in tonnellate per anno 
+# Supponiamo emissioni tra 4 e 20 tonnellate per persona 
+import numpy as np
+co2_emissions = np.round(np.random.uniform(4, 20, 200), 2)
+
+# Nome del file di output
+output_file = "PYTHON\ProgrammingLab\__pycache__emissioni.txt"
+
+# Salvataggio su file
+np.savetxt(output_file, co2_emissions, fmt="%.2f")
+
+# Restituisco il percorso del file
+output_file
+17/6:
+# Generazione di 200 valori casuali di emissioni di CO2 in tonnellate per anno 
+# Supponiamo emissioni tra 4 e 20 tonnellate per persona 
+import numpy as np
+co2_emissions = np.round(np.random.uniform(4, 20, 200), 2)
+
+# Nome del file di output
+output_file = "PYTHON\ProgrammingLab\__pycache__\emissioni.txt"
+
+# Salvataggio su file
+np.savetxt(output_file, co2_emissions, fmt="%.2f")
+
+# Restituisco il percorso del file
+output_file
+17/7:
+# Generazione di 200 valori casuali di emissioni di CO2 in tonnellate per anno 
+# Supponiamo emissioni tra 4 e 20 tonnellate per persona 
+import numpy as np
+co2_emissions = np.round(np.random.uniform(4, 20, 200), 2)
+
+# Nome del file di output
+output_file = "emissioni.txt"
+
+# Salvataggio su file
+np.savetxt(output_file, co2_emissions, fmt="%.2f")
+
+# Restituisco il percorso del file
+output_file
+15/5:
+emissioni = np.loadtxt("emissioni.txt", dtype=float)
+print(emissioni[0:5])
+15/6:
+#1)
+
+emissioni = np.loadtxt("emissioni.txt", dtype=float)
+print(emissioni[0:5])
+
+#2)
+emissioni_18 = emissioni[emissioni > 18]
+emissioni_18
+19/1:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in 5:
+    l1.append(n)
+
+print(l1)
+19/2:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    l1.append(n)
+
+print(l1)
+19/3:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5)]
+
+print(l1)
+19/4:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5)]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+# ciclo 2)
+19/5:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+# ciclo 2)
+19/6:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    for x_s in range(x-1):
+        if primo_check(x,x_s):
+
+
+help(list)
+19/7:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    for x_s in range(x-1):
+        if x_s != 1 and primo_check(x,x_s):
+            flag = True
+    if flag == True:
+        l1.append(x)
+
+print(l1)
+19/8:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = False
+    for x_s in range(x-1):
+        if x_s != 1 and primo_check(x,x_s):
+            flag = True
+    if flag == True:
+        l1.append(x)
+
+print(l1)
+19/9:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = False
+    for x_s in range(x-1):
+        if x_s != 1 and x_s != 0 and primo_check(x,x_s):
+            flag = True
+    if flag == True:
+        l1.append(x)
+
+print(l1)
+19/10:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    for x_s in range(x-1):
+        if x_s != 1 and x_s != 0 and not primo_check(x,x_s):
+            flag = False
+    if flag == True:
+        l1.append(x)
+
+print(l1)
+19/11:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    for x_s in range(x-1):
+        if x_s == 1 or x_s == 0:
+            next
+        if not primo_check:
+            flag = False
+    if flag == True:
+        l1.append(x)
+
+print(l1)
+19/12:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    for x_s in range(x-1):
+        if x_s == 1 or x_s == 0:
+            next
+        if not primo_check(x,x_s):
+            flag = False
+    if flag == True:
+        l1.append(x)
+
+print(l1)
+19/13:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    for x_s in range(x-1):
+        if x_s == 1 or x_s == 0:
+            next
+        else:
+            if not primo_check(x,x_s):
+                flag = False
+    if flag == True:
+        l1.append(x)
+
+print(l1)
+19/14:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    if x == 0:
+        flag = False
+    if x == 1:
+        flag = True
+    if x>1:
+        for x_s in range(x-1):
+            if x_s > 1 and primo_check(x,x_s) == False:
+                flag = False
+    if flag == True:
+        l1.append(x)
+
+
+print(l1)
+19/15:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    print(x,flag)
+    if x == 0:
+        flag = False
+    if x == 1:
+        flag = True
+    if x>1:
+        for x_s in range(x-1):
+            if x_s > 1 and primo_check(x,x_s) == False:
+                flag = False
+    if flag == True:
+        print(flag)
+        l1.append(x)
+
+
+print(l1)
+19/16:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    print(x)
+    if x == 0:
+        flag = False
+    if x == 1:
+        flag = True
+        print(flag)
+    if x>1:
+        for x_s in range(x-1):
+            if x_s > 1 and primo_check(x,x_s) == False:
+                flag = False
+    if flag == True:
+        print(flag)
+        l1.append(x)
+
+
+print(l1)
+19/17:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    print(x)
+    if x == 0:
+        flag = False
+    if x == 1:
+        flag = True
+    print("flag =", flag)
+    if x>1:
+        for x_s in range(x-1):
+            if x_s > 1 and primo_check(x,x_s) == False:
+                flag = False
+    if flag == True:
+        print(flag)
+        l1.append(x)
+
+
+print(l1)
+19/18:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    print(x)
+    if x == 0:
+        flag = False
+    if x == 1:
+        flag = True
+    if x>1:
+        for x_s in range(x-1):
+            if x_s > 1 and primo_check(x,x_s) == False:
+                flag = False
+                print("flag =", flag)
+    if flag == True:
+        print(flag)
+        l1.append(x)
+
+
+print(l1)
+19/19:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    print(x)
+    if x == 0:
+        flag = False
+    if x == 1:
+        flag = True
+    if x>1:
+        for x_s in range(x-1):
+            if (x_s > 1 and primo_check(x,x_s) == False):
+                flag = False
+                print("flag =", flag)
+    if flag == True:
+        print(flag)
+        l1.append(x)
+
+
+print(l1)
+19/20:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b == 1  else False
+
+for x in range(10):
+    flag = True
+    print(x)
+    if x == 0:
+        flag = False
+    if x == 1:
+        flag = True
+    if x>1:
+        for x_s in range(x-1):
+            if x_s > 1:
+                flag = primo_check(x,x_s)
+                print("flag =", flag)
+    if flag == True:
+        print(flag)
+        l1.append(x)
+
+
+print(l1)
+19/21:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b != 0 else False
+
+for x in range(10):
+    flag = True
+    print(x)
+    if x == 0:
+        flag = False
+    if x == 1:
+        flag = True
+    if x>1:
+        for x_s in range(x-1):
+            if x_s > 1:
+                flag = primo_check(x,x_s)
+                print("flag =", flag)
+    if flag == True:
+        print(flag)
+        l1.append(x)
+
+
+print(l1)
+19/22:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+primo_check = lambda a,b: True if a%b != 0 else False
+
+for x in range(10):
+    flag = True
+    print(x)
+    if x == 0:
+        flag = False
+    if x == 1:
+        flag = True
+    if x>1:
+        for x_s in range(2,x):
+            flag = primo_check(x,x_s)
+            print(f"flag {x_s} =", flag)
+            if flag == False:
+                break
+    if flag == True:
+        print(flag)
+        l1.append(x)
+
+
+print(l1)
+19/23:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: a^2 - (a-1)^2 > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero)
+
+print(l1)
+19/24:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a^2 - (a-1)^2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero)
+
+print(l1)
+19/25:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero)
+
+print(l1)
+19/26:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print(l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n ]
+19/27:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:" l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check ]
+print("l1 con comprehension:", l1)
+19/28:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check ]
+print("l1 con comprehension:", l1)
+19/29:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(numero) ]
+print("l1 con comprehension:", l1)
+19/30:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(numero) ]
+print("l1 con comprehension:", l1)
+19/31:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(numero) ]
+print("l1 con comprehension:", l1)
+19/32:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+19/33:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+
+stringa = "banana"
+
+myiter = iter(stringa)
+
+print(next(myiter))
+19/34:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+
+stringa = "banana"
+
+myiter = iter(stringa)
+
+print(next(myiter))
+19/35:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+
+stringa = "banana"
+
+myiter = iter(stringa)
+
+print(next(myiter))
+19/36:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+
+stringa = "banana"
+
+myiter = iter(stringa)
+
+for lettera in stringa:
+    print(next(myiter))
+19/37:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+dict = {"a":[1,6,3],"b":[9,5,2],"c":[2,6,1]}
+
+for key in dict:
+    print(list)
+19/38:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+dict = {"a":[1,6,3],"b":[9,5,2],"c":[2,6,1]}
+
+for key in dict:
+    print([key])
+19/39:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+dict = {"a":[1,6,3],"b":[9,5,2],"c":[2,6,1]}
+
+for key in dict:
+    print(dict[key])
+19/40:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,5,2],"c":[2,6,1]}
+
+for key in dict:
+    for value in dict[key]:
+        print(value)
+        if value not in l1:
+            l1.append(value)
+            print(f"\n Ho appenduto: {value}")
+19/41:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,5,2],"c":[2,6,1]}
+
+for key in dict:
+    for value in dict[key]:
+        print(value)
+        if value not in l1:
+            l1.append(value)
+            print(f"\n Ho appenduto: {value}")
+
+print(l1)
+19/42:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        print(value)
+        if value not in l1:
+            l1.append(value)
+            print(f"\n Ho appenduto: {value}")
+
+print(l1)
+19/43:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [for key in dict, value for value in dict[key], if value not in l1]
+19/44:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for value in dict[key], for key in dict, if value not in l1]
+19/45:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for value in dict[key] for key in dict, if value not in l1]
+19/46:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for value in dict[key] for key in dict if value not in l1]
+19/47:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for value in dict[key] for key in dict if value not in l1]
+
+print("l1 con comprehension:", l1)
+19/48:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for sublist in dict for sublist in dict[sublist]]
+
+print("l1 con comprehension:", l1)
+19/49:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for sublist in dict]
+
+print("l1 con comprehension:", l1)
+19/50:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for sublist in dict]
+
+print("l1 con comprehension:", l1)
+19/51:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for sublist in dict for value in sublist]
+
+print("l1 con comprehension:", l1)
+19/52:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for sublist in dict for value in dict[sublist]]
+
+print("l1 con comprehension:", l1)
+19/53:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for sublist in dict for value in dict[sublist] if value not in list]
+
+print("l1 con comprehension:", l1)
+19/54:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for sublist in dict for value in dict[sublist] if value not in l1]
+
+print("l1 con comprehension:", l1)
+19/55:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for sublist in dict if value not in l1 for value in dict[sublist]]
+
+print("l1 con comprehension:", l1)
+19/56:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l1 = [value for sublist in dict for value in dict[sublist] if value not in l1]
+
+print("l1 con comprehension:", l1)
+19/57:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+l1= []
+
+l1 = [value for sublist in dict for value in dict[sublist] if value not in l1]
+
+print("l1 con comprehension:", l1)
+19/58:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+my_dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in my_dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l2 = [value for sublist in my_dict for value in my_dict[sublist] if value not in l1]
+l1=l2
+print("l1 con comprehension:", l1)
+19/59:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+my_dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in dict:
+    for value in my_dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l2 = [value for sublist in my_dict for value in my_dict[sublist] if value not in l1]
+print(l2)
+print("l1 con comprehension:", l1)
+19/60:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+#creazione di una lista con solo elementi delle liste del dizionario non già appesi nella lista
+
+l1.clear()
+
+my_dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in my_dict:
+    for value in my_dict[key]:
+        if value not in l1:
+            l1.append(value)
+
+print(l1)
+
+l2 = [value for sublist in my_dict for value in my_dict[sublist] if value not in l1]
+print(l2)
+print("l1 con comprehension:", l1)
+19/61:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+
+l1.clear()
+
+my_dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in my_dict:
+    for value in my_dict[key]:
+        if value%2 == 0
+            l1.append(value)
+
+print(l1)
+
+l2 = [value for sublist in my_dict for value in my_dict[sublist] if value%2 == 0]
+print(l2)
+print("l1 con comprehension:", l1)
+19/62:
+# ciclo 1)
+#for classico
+
+l1 = []
+for n in range(5):
+    if (n%2 == 0):
+        l1.append(n)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n for n in range(5) if n%2 == 0]
+
+print("l1 con comprehension:", l1)
+
+print("- - - - - - - - - - - - -")
+
+l1.clear()
+
+# ciclo 2)
+
+check = lambda a: (a**2 - (a-1)**2) > 2
+
+
+for numero in range(10):
+    if check(numero):
+        l1.append(numero**2)
+
+print(l1)
+
+#versione con list comprehension
+
+l1 = [n**2 for n in range(10) if check(n)]
+print("l1 con comprehension:", l1)
+
+
+print("- - - - - - - - - - - - -")
+
+
+l1.clear()
+
+my_dict = {"a":[1,6,3],"b":[9,1,2],"c":[2,5,1]}
+
+for key in my_dict:
+    for value in my_dict[key]:
+        if value%2 == 0:
+            l1.append(value)
+
+print(l1)
+
+l1= [value for sublist in my_dict for value in my_dict[sublist] if value%2 == 0]
+
+print("l1 con comprehension:", l1)
+19/63:
+import numpy as np
+
+#1
+
+array_1 = np.array([2,3,5,7])
+
+#2
+
+print(len(array_1))
+print(array_1.size)
+
+#3
+#il vettore sarà intero o float
+
+print(array_1.dtype)
+
+
+def is_primo(i):
+
+    for x in range(2, i-1):
+        if i%x == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(2,10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+
+a
+19/64:
+import numpy as np
+
+#1
+
+array_1 = np.array([2,3,5,7])
+
+#2
+
+print(len(array_1))
+print(array_1.size)
+
+#3
+#il vettore sarà intero o float
+
+print("Il vettore è di tipo: "array_1.dtype)
+
+
+def is_primo(i):
+
+    for x in range(2, i-1):
+        if i%x == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(2,10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+
+a
+19/65:
+import numpy as np
+
+#1
+
+array_1 = np.array([2,3,5,7])
+
+#2
+
+print(len(array_1))
+print(array_1.size)
+
+#3
+#il vettore sarà intero o float
+
+print("Il vettore è di tipo: ", array_1.dtype)
+
+
+def is_primo(i):
+
+    for x in range(2, i-1):
+        if i%x == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(2,10) if is_primo(i)])
+
+print(len(a))
+print(a.size)
+
+a
+19/66:
+import numpy as np
+
+#1
+
+array_1 = np.array([2,3,5,7])
+
+#2
+
+print(len(array_1))
+print(array_1.size)
+
+#3
+#il vettore sarà intero
+
+print("Il vettore è di tipo: ", array_1.dtype)
+
+#4
+
+def is_primo(i):
+
+    for x in range(2, i-1):
+        if i%x == 0:
+            return False
+    return True
+
+
+a = np.array([i for i in range(2,10) if is_primo(i)])
+
+
+a
+33/1: %conda install pandas
+33/2: %conda install pandas
+37/1:
+%conda install pandas
+import pandas as pd
+from datasets import load_dataset
+37/2:
+
+import pandas as pd
+from datasets import load_dataset
+37/3:
+conda install pandas
+import pandas as pd
+from datasets import load_dataset
+37/4:
+
+import pandas as pd
+37/5:
+
+import pandas as pd
+
+from datasets import load_dataset
+39/1:
+# Importing Libraries
+import pandas as pd
+from datasets import load_dataset
+
+# Carica il dataset
+dataset = load_dataset("yiqing111/Engineering_Jobs_Insight_Dataset")
+
+# Converte in DataFrame Pandas
+df = dataset['train'].to_pandas()
+# Rimpiazza gli spazi con l'underscore
+df.columns = df.columns.str.replace(' ', '_')
+39/2:
+# Importing Libraries
+import pandas as pd
+from datasets import load_dataset
+
+# Carica il dataset
+dataset = load_dataset("yiqing111/Engineering_Jobs_Insight_Dataset")
+
+# Converte in DataFrame Pandas
+df = dataset['train'].to_pandas()
+# Rimpiazza gli spazi con l'underscore
+df.columns = df.columns.str.replace(' ', '_')
+39/3:
+df.drop('URL', axis = 1, inplace=True)
+df.info()
+39/4:
+# Importing Libraries
+import pandas as pd
+
+
+# Carica il dataset
+dataset = load_dataset("yiqing111/Engineering_Jobs_Insight_Dataset")
+
+# Converte in DataFrame Pandas
+df = dataset['train'].to_pandas()
+# Rimpiazza gli spazi con l'underscore
+df.columns = df.columns.str.replace(' ', '_')
+39/5:
+# Importing Libraries
+import pandas as pd
+from datasets import load_dataset
+
+# Carica il dataset
+dataset = load_dataset("yiqing111/Engineering_Jobs_Insight_Dataset")
+
+# Converte in DataFrame Pandas
+df = dataset['train'].to_pandas()
+# Rimpiazza gli spazi con l'underscore
+df.columns = df.columns.str.replace(' ', '_')
+39/6: df.groupby('Job_Title')['Salary_Min'].mean()
+39/7:
+# Importing Libraries
+import pandas as pd
+
+
+# Carica il dataset
+
+# Converte in DataFrame Pandas
+df = dataset['train'].to_pandas()
+# Rimpiazza gli spazi con l'underscore
+df.columns = df.columns.str.replace(' ', '_')
+39/8:
+# Importing Libraries
+import pandas as pd
+from dataseta import load_dataset
+
+# Carica il dataset
+dataset = load_dataset("yiqing111/Engineering_Jobs_Insight_Dataset")
+
+# Converte in DataFrame Pandas
+df = dataset['train'].to_pandas()
+# Rimpiazza gli spazi con l'underscore
+df.columns = df.columns.str.replace(' ', '_')
+39/9:
+# Importing Libraries
+import pandas as pd
+from datasets import load_dataset
+
+# Carica il dataset
+dataset = load_dataset("yiqing111/Engineering_Jobs_Insight_Dataset")
+
+# Converte in DataFrame Pandas
+df = dataset['train'].to_pandas()
+# Rimpiazza gli spazi con l'underscore
+df.columns = df.columns.str.replace(' ', '_')
+39/10:
+# Importing Libraries
+import pandas as pd
+from datasets import load_dataset
+
+# Carica il dataset
+dataset = load_dataset("yiqing111/Engineering_Jobs_Insight_Dataset")
+
+# Converte in DataFrame Pandas
+df = dataset['train'].to_pandas()
+# Rimpiazza gli spazi con l'underscore
+df.columns = df.columns.str.replace(' ', '_')
+39/11: df.info()
+39/12:
+# Convertire 'Date_Posted' in datetime senza specificare il formato esatto
+df['Date_Posted'] = pd.to_datetime(df['Date_Posted'], errors='coerce')
+# errors='coerce' trasforma quelli non validi in NaT (Not a Time, l'equivalente datetime di NaN)
+
+df.info()
+39/13:
+df['Date_Posted'] = df['Date_Posted'].dt.date
+
+df.info()
+40/1:
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt  # si importa con il l'alias plt
+40/2:
+import numpy as np
+import pandas as pd
+conda install matplot.lib.pyplot
+import matplotlib.pyplot as plt  # si importa con il l'alias plt
+40/3:
+import pandas as pd
+from datasets import load_dataset
+import matplotlib.pyplot as plt  # we will use this for plotting
+
+# Carica il dataset
+dataset = load_dataset("yiqing111/Engineering_Jobs_Insight_Dataset")
+
+# Converte in DataFrame Pandas
+df = dataset['train'].to_pandas()
+# Rimpiazza gli spazi con l'underscore
+df.columns = df.columns.str.replace(' ', '_')
+# Trasformo le date in formaro date time
+df['Date_Posted'] = pd.to_datetime(df['Date_Posted'], errors='coerce')
+61/1: clear
+61/2: ipython
+   1: %history -g -f history.txt
