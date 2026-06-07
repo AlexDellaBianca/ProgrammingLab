@@ -11,4 +11,4 @@ Nota: questo readme è stato cancellato per sbaglio, è stato rimesso.
 6.4 - DA FARE
 7.4 - Completato
 
-----
+---
